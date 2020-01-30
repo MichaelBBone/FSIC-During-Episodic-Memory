@@ -18,6 +18,8 @@ ReacCorVivAcc.R - code for the behavioral correlation results depicted in Figure
 
 ## Data
 
-DNN\<feature level\>ImMat(3X3).mat - matlab data file containing features extracted from VGG16 for all 180 study images. 'feature level' refers to the layer of VGG16 that the features were drawn from. The levels are the last convolution or fully connected layers in each set of layers divided by the max pooling layers. L1 = conv layer 2, L2 = conv layer 4, L3 = conv layer 7, L4 = conv layer 10, L5 = conv layer 13, FC3 = fully-connected layer 3. L2 and L4 were not used in the study.
+DNN\<feature level\>ImMat(3X3).mat - matlab data file containing features extracted from VGG16 for all 180 study images. 'feature level' refers to the layer of VGG16 that the features were drawn from. The levels are the last convolution or fully connected layers in each set of layers divided by the max pooling layers. L1 = conv layer 2, L2 = conv layer 4, L3 = conv layer 7, L4 = conv layer 10, L5 = conv layer 13, FC3 = fully-connected layer 3. L2 and L4 were not used in the study. All layers except the fully connected layer were downsampled to 3X3.
 
-DNN\<feature level\>ImMat.mat - matlab data file containing features extracted from VGG16 for all 180 study images.
+DNN\<feature level\>Mix1Mat(3X3)HR.mat - matlab data file containing hemodynamically smoothed features extracted from VGG16 for movie 1.
+
+DNN\<feature level\>Mix2Mat(3X3)HR.mat - matlab data file containing hemodynamically smoothed features extracted from VGG16 for movie 2.
