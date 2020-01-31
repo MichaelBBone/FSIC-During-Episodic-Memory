@@ -18,7 +18,7 @@ ReacCorVivAcc.R - code for the behavioral correlation results depicted in Figure
 
 ## Data
 
-<b>DNN Feature activiations:
+<b>DNN Feature activiations:</b>
 
 DNN\<feature level\>ImMat(3X3).mat - matlab matrix data file containing features (columns) extracted from VGG16 for all 180 study images (rows). 'feature level' refers to the layer of VGG16 that the features were drawn from. The levels are the last convolution or fully connected layers in each set of layers divided by the max pooling layers. L1 = conv layer 2, L2 = conv layer 4, L3 = conv layer 7, L4 = conv layer 10, L5 = conv layer 13, FC3 = fully-connected layer 3. L2 and L4 were not used in the study. All layers except the fully connected layer were downsampled to 3x3.
 
@@ -26,7 +26,7 @@ DNN\<feature level\>Mix1Mat(3X3)HR.mat - matlab matrix data file containing hemo
 
 DNN\<feature level\>Mix2Mat(3X3)HR.mat - matlab matrix data file containing hemodynamically smoothed features (columns) for all time-points (rows) extracted from VGG16 for movie 2.
 
-<b>Brain (vertex) activity:
+<b>Brain (vertex) activity:</b>
 
 ROINamesDiv.RData - R data file containing a list of FreeSurfer ROI groupings. ROI groupings: 1 = 'LowOc' (lower occipital), 2 = 'HighOc' (higher occipital), 3 = 'Tmprl' (temporal), 4 = 'Prtl' (parietal), 5 = 'Front' (frontal), 6 = 'Other'.
 
@@ -40,25 +40,25 @@ recogVis\<ROI\>.RData - R data file containing vertex activity for the recall ta
 
 recogPrb\<ROI\>.RData - R data file containing vertex activity for the old/new recognition task. Data in the form of lists (names = subjects) of matrices (row = image (in alphabetical order), column = brain vertex).
 
-<b>Image names:
+<b>Image names:</b>
 
 imageNames.RData - R data file containing all image file names (nBackImagesAll), the image for each n-back/encoding trial (nBackImages), the cued recall images for each image and time point sorted alphabetically (recogImages), and the recognition probe images for each image and time point sorted alphabetically (recogProbes). There are 16 recall/recognition time points, so each image name is repeated 16 times in recogImages and recogProbes.
 
-<b>FreeSurfer ROI names:
+<b>FreeSurfer ROI names:</b>
 
 ROINamesNum.RData - R data file containing a vector of FreeSurfer numerical ROI names (only left hemisphere because it was used to represent bilateral ROIs)
 
 ROINamesFreeSurf.RData - R data file containing a vector mapping between FreeSurfer numerical and descriptive ROI names.
 
-<b>Seed weights:
+<b>Seed weights:</b>
 
 ROINamesFreeSurf.RData - R data file containing an array of seed weights depicted in Figure 4a (row = ROI, column = seed level).
 
-<b>Reactivation (rank) and behavioral data:
+<b>Reactivation (rank) and behavioral data:</b>
 
 ReacRankRecall.RData - R data file containing the recall reactivation and behavioral data in data.frame format. Trials for each subject are along the rows (sorted alphabetically by cue label, not in temporal order). Columns: see FSIC.R or ReacCorVivAcc.R for a detailed description of the columns.
 
-<b>Pre-generated stats (because some stats can take >1 hour to generate):
+<b>Pre-generated stats (because some stats can take >1 hour to generate):</b>
 
 reacFSICStats.RData - R data file containing FSIC statistics for all ROIs (used in Figure 4b). All data in 3-D array format (dim 1 = ROI, dim 2 = feature level, dim 3 = seed level). R data file contains coefficients (CorVals), t values (TVals), p values (PVals), 90% CI upper bounds (UBVals), and 90% CI lower bounds (LBVals).
 
