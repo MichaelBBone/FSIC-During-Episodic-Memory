@@ -58,6 +58,12 @@ ROINamesFreeSurf.RData - R data file containing an array of seed weights depicte
 
 ReacRankRecall.RData - R data file containing the recall reactivation and behavioral data in data.frame format. Trials for each subject are along the rows (sorted alphabetically by cue label, not in temporal order). Columns: see FSIC.R or ReacCorVivAcc.R for a detailed description of the columns.
 
+<b>Simulated reactivation (rank) data:</b>
+
+simRankIdenticalMem200Sub.RData - R data file containing simulated reactivation data (identical trial-by-trial memory accuracy across feature levels) used in study.
+
+simRankIndependantMem200Sub.RData - R data file containing simulated reactivation data (independant trial-by-trial memory accuracy across feature levels) used in study.
+
 <b>Pre-generated stats (because some stats can take >1 hour to generate):</b>
 
 reacFSICStats.RData - R data file containing FSIC statistics for all ROIs (used in Figure 4b). All data in 3-D array format (dim 1 = ROI, dim 2 = feature level, dim 3 = seed level). R data file contains coefficients (CorVals), t values (TVals), p values (PVals), 90% CI upper bounds (UBVals), and 90% CI lower bounds (LBVals).
@@ -67,9 +73,3 @@ simRankIdenticalMem200Sub_MeanStats.RData - R data file containing simulated mea
 simRankIdenticalMem200Sub_FSICStats.RData - R data file containing simulated FSIC statistics (identical trial-by-trial memory accuracy across feature levels) (Figure 2b and Supplementary Figure 4b). All data in 3-D array format (dim 1 = ROI, dim 2 = feature level, dim 3 = seed level). R data file contains coefficients (CorVals), t values (TVals), p values (PVals), 90% CI upper bounds (UBVals), and 90% CI lower bounds (LBVals).
 
 simRankIndependantMem200Sub_FSICStats.RData - R data file containing simulated FSIC statistics (independant trial-by-trial memory accuracy across feature levels) (Supplementary Figure 4c). All data in 3-D array format (dim 1 = ROI, dim 2 = feature level, dim 3 = seed level). R data file contains coefficients (CorVals), t values (TVals), p values (PVals), 90% CI upper bounds (UBVals), and 90% CI lower bounds (LBVals).
-
-
-
-
-
-
