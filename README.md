@@ -1,7 +1,7 @@
 # FSIC-During-Episodic-Memory
 Code and data repository for "Feature-Specific Neural Reactivation during Episodic Memory". 
 
-Download the release for all files. Only the release contains the neural activity data (only used in FeatSpecifReac.R) due to file size limitations.
+Download the release for all files. Only the release contains the neural activity data (used in FeatSpecifReac.R) due to file size limitations.
 
 ## Scripts
 
